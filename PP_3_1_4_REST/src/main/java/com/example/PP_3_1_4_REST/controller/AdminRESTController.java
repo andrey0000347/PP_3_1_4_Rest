@@ -11,7 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api")
-public class AdminRESTController {
+public class AdminRestController {
 
     private final UserServiceImp userService;
 
@@ -51,3 +51,4 @@ public class AdminRESTController {
         userService.deleteUser(id);
     }
 }
+
