@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api")
-public class UserRESTController {
+public class UserRestController {
 
     @GetMapping( "/user")
     public User getUserInfo() {
@@ -17,3 +17,4 @@ public class UserRESTController {
         return (User) authentication.getPrincipal();
     }
 }
+
