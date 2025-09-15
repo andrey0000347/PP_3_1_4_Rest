@@ -7,7 +7,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 
 @Service
-
 public class RoleServiceImp implements RoleService {
     private final RoleDaoImp roleRepository;
 
@@ -21,3 +20,4 @@ public class RoleServiceImp implements RoleService {
         roleRepository.save(role);
     }
 }
+
