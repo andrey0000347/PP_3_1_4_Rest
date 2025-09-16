@@ -1,7 +1,7 @@
 package com.example.PP_3_1_4_REST.controller;
 
 import com.example.PP_3_1_4_REST.model.User;
-import com.example.PP_3_1_4_REST.service.UserServiceImp;
+import com.example.PP_3_1_4_REST.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -13,10 +13,10 @@ import java.util.List;
 @RequestMapping("/api")
 public class AdminRestController {
 
-    private final UserServiceImp userService;
+    private final UserService userService;
 
     @Autowired
-    public AdminRestController(UserServiceImp userService) {
+    public AdminRestController(UserService userService) {
         this.userService = userService;
     }
 
@@ -51,4 +51,5 @@ public class AdminRestController {
         userService.deleteUser(id);
     }
 }
+
 
